@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Media</title>
+</head>
+<body>
+    <div>
+        <header>Boletim</header>
+    </div>
+    <div>
+        <form action="" id="name-form">
+            <input type="text" class="botao" id="name" name="name" placeholder="Digite o seu nome" required>
+            <input type="text" class="botao" id="escola" name="name" placeholder="Digite sua escola" required>
+            <input type="submit" class="botao" value="Enviar" onclick="checkUser()">
+        </form>
+    </div>
+    <div id="conteudo">
+        <div id="informacoes">
+            <h4 id="username"></h4> 
+            <h4 id="escolaBoletim"></h4>
+        </div>
+        <div id="trimestres">
+            <p id="caixa"></p>
+            <p id="caixa"> 1 Trimestre</p>
+            <p id="caixa"> 2 Trimestre</p>
+            <p id="caixa"> 3 Trimestre</p>
+            <p id="caixa"> Media</p>
+        </div>
+        <div id="boletim">
+            <div id="materias">
+                <p id="caixa">Arte</p>
+                <p id="caixa">Biologia</p>
+                <p id="caixa">Educação Física</p>
+                <p id="caixa">Filosofia</p>
+                <p id="caixa">Física</p>
+                <p id="caixa">Geografia</p>
+                <p id="caixa">História</p>
+                <p id="caixa">Língua Portuguesa</p>
+                <p id="caixa">Matemática</p>
+                <p id="caixa">Química</p>
+                <p id="caixa">Sociologia</p>
+                <p id="caixa">Inglês</p>
+                <p id="caixa">Literatura</p>
+                <p id="caixa">Produção de Texto</p>
+            </div>
+            <div id="notas" class="primeiroTri"></div>
+            <div id="notas" class="segundoTri"></div>
+            <div id="notas" class="terceiroTri"></div>
+            <div id="notaFinal"></div>
+        </div>
+        <div>
+            <input type="number" id="notaNum" class="botao" placeholder="Nota">
+            <input type="button" id="enviar" value="Enviar" class="botao" onclick="enviaNota()">
+            <input type="button" id="calMedia" value="MEDIA" class="botao" onclick="calculaMedia()">
+        </div>
+        <div>
+            <button id="logout" onclick="sair()" class="botao">Sair</button>
+        </div>
+    </div>
+    <div><footer><em>@byPato</em></footer></div>
+    <script src="scripts.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

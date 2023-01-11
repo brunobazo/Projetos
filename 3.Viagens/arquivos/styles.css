@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+*{
+    background-attachment: fixed;
+}
+
+body{
+    margin-left: 5%;
+    margin-top: 0%;
+    width: 90%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #7BE0D1, #1ADBD8);
+}
+
+header{
+    display: flex;
+    color: #FF990A;
+    font: normal normal 1.5em 'Lato';
+    text-indent: 2em;
+}
+
+button{
+    height: 3.5em;
+    width: 15em;
+    background-color: #013550;
+    border-bottom: none;
+    border-top: none;
+    border-color: #FF990A;
+    border-radius: 5px;
+    color: #FFCC85;
+    font: bold normal 'Lato';
+}
+
+h2{
+    font: bold normal 2em 'Lato';
+}
+
+.imagem{
+    float: right;
+    width: 400px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.imagem:hover{
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2); 
+     transform:scale(1.2);
+}
+
+.ancora{
+    margin-right: 60px;
+    color: #01273C;
+}
+
+#logo{
+    width: 5em;
+    margin-left: 40%
+}
+
+#tituloTopo{
+    background-color: #01273C;
+    text-align: justify;
+}
+
+#botoes{
+    background-color: #013550;
+    height: 3em;
+    text-align: center;
+}
+
+#padding{
+    background-image: linear-gradient(180deg, #01273C 20%, #1ADBD8 95%);
+    padding: 1%;
+}
+
+#textos{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    text-indent: 2em;
+    font: normal normal 1.4em 'Lato';
+}
+
+#conteudoGeral{
+    background-color: rgb(255, 255, 255);
+    min-height: 890px;
+    height: 90%;
+}
+
+#linkFim{
+    font: bold normal 1em'Lato';
+    margin-top: 1em;
+    text-align: center;
+    background-image: linear-gradient(to right, #1ADBD8, #16BDBE, #1ADBD8 );
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;500&display=swap');
+
+body{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: #0A151F;
+    color: white;
+}
+#caixa{
+    background-color: #19334D;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50vh;
+    height: 40vh;
+    transform: translate(-50%, -50%);
+}
+#fundo{
+    background-color: #19334D;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 51vh;
+    height: 41vh;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+#pisca{
+   width: 40vh;
+   height: 60vh;
+   background-image: linear-gradient(to left, #16AAFF, rgba(212, 24, 24, 0));
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   animation: animate 6s linear infinite;
+   transform-origin: top left;
+}
+#pisca2{
+    width: 40vh;
+    height: 60vh;
+    background-image: linear-gradient(to right, #16AAFF, rgba(228, 28, 28, 0));
+    position: absolute;
+    left: -28.5%;
+    top: -96%;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+h1{
+    font-size: 40pt;
+    font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
+    font-weight: 350;
+    text-decoration: underline;
+    text-decoration-color: #16AAFF;
+}
+h2{
+    font-size: 25pt;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 300;
+    margin-left: 1.5em;
+    margin-top: 1.7em;
+}
+p{
+    font-size: 25pt;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 300;
+    margin-left: 1.5em;
+}
+input{
+    font-size: 23pt;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 300;
+    background-color: #0F1F2E;
+    color: white;
+}
+input[type=button]{
+    border: 0;
+    padding: 0.2em;
+    margin-left: 0.5em;
+    background-color: #16AAFF;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+    color: #0F1F2E;
+}
+input[type=button]:hover{
+    background-color: #0F1F2E;
+}
+input[type=number]{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 1em;
+    width: 6em;
+    text-decoration: underline;
+    text-decoration-color: #16AAFF;
+    text-align: right;
+}
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+#massa{
+    margin-left: 1.5em;
+}
+#calcular{
+    margin-left: 1.5em;
+}
+#classificacao{
+    margin-top: -1em;
+    margin-left: 6.2em;
+}
+::placeholder{
+    text-align: left;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    text-align: left;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    text-align: left;
+}
