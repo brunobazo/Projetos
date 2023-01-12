@@ -12,8 +12,8 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 50vh;
-    height: 40vh;
+    width: 700px;
+    height: 500px;
     transform: translate(-50%, -50%);
 }
 #fundo{
@@ -21,8 +21,8 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 51vh;
-    height: 41vh;
+    width: 710px;
+    height: 510px;
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
