@@ -81,7 +81,6 @@ igual.addEventListener('click', function(){
         telaAtual.innerText = ''
         operacao.innerText = ''
         console.log(soma)
-        console.log(numTela.length)
     } else {
         telaAnterior.innerText = ''
         operacao.innerText = ''
