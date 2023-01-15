@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: #575757;
+}
+#Calculadora{
+    background-color: #333333;
+    min-width: 400px;
+    min-height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+#tela{
+    background-color: #202F31;
+    border: 2px solid black;
+    height: 110px;
+    width: 310px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    color: #EFBB40;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+#botoes{
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    left: 50%;
+    transform: translate(-50%, 38%);
+    text-align: center;
+}
+button{
+    background-color: #474747;
+    border: 2px solid black;
+    width: 80px;
+    height: 80px;
+    margin: 2px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    color: #EFBB40;
+}
+.grande{
+    height: 80px;
+    width: 168px;
+}
+#operacao{
+    font-size: 35px;
+}
