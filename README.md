@@ -6,4 +6,5 @@
 Primeiro projeto com JS, antes de aprender CSS <a href="2.Boletim/index.html">boletim escolar<a><br>
 Primeiro site, aprendendo CSS
 <a href="3.Viagens/index.html">Viagens<a><br>
-Calculadora IMC com CSS animado <a href="4.IMC/index.html">Calculadora <a>
+Calculadora IMC com CSS animado <a href="4.IMC/index.html">Calculadora <a><br>
+Calculadora feita com JavaScript <a href='5.Calculadora/index.html'>Calculadora<a>
