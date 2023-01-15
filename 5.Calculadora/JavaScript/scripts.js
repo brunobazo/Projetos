@@ -67,8 +67,8 @@ igual.addEventListener('click', function(){
     //verificando se tem virgula para arredondar
     var quantNum = JSON.stringify(soma)
     var decimal = quantNum.indexOf('.')
-    if(quantNum.length > 10 && decimal == true){
-        soma = soma.toFixed(6)
+    if(decimal < 3){
+        soma = soma.toFixed(5)
     }
     if(decimal >= 3 && decimal < 7){
         soma = soma.toFixed(3)
