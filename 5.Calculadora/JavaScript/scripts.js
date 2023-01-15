@@ -69,7 +69,8 @@ igual.addEventListener('click', function(){
     var decimal = quantNum.indexOf('.')
     if(quantNum.length > 10 && decimal == true){
         soma = soma.toFixed(6)
-    } else if(decimal >= 3 && decimal < 7){
+    }
+    if(decimal >= 3 && decimal < 7){
         soma = soma.toFixed(3)
     } else if(decimal >= 7){
         soma = Math.round(soma)
