@@ -67,13 +67,12 @@ igual.addEventListener('click', function(){
     //verificando se tem virgula para arredondar
     var quantNum = JSON.stringify(soma)
     var decimal = quantNum.indexOf('.')
-    if(decimal < 3){
+    if(decimal < 3 && decimal != -1){
         soma = soma.toFixed(5)
-    }
-    if(decimal >= 3 && decimal < 7){
+    } else if(decimal >= 3 && decimal < 6){
         soma = soma.toFixed(3)
-    } else if(decimal >= 7){
-        soma = Math.round(soma)
+    } else if(decimal >= 6){
+        soma = soma
     }
     //Limite de digitos da calculadora
     var numTela = JSON.stringify(soma)
@@ -82,11 +81,12 @@ igual.addEventListener('click', function(){
         telaAtual.innerText = ''
         operacao.innerText = ''
         console.log(soma)
+        console.log(numTela.length)
     } else {
         telaAnterior.innerText = ''
         operacao.innerText = ''
-        telaAtual.innerText = parseFloat(soma)
-        console.log(parseFloat(soma))
+        telaAtual.innerText = soma
+        console.log(soma)
     }
 })
 
