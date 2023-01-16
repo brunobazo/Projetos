@@ -75,7 +75,7 @@ igual.addEventListener('click', function(){
     } else if(decimal >= 3 && decimal < 6){
         soma = soma.toFixed(3)
     } else if(decimal >= 6){
-        soma = soma
+        soma = Math.round(soma)
     }
     //Limite de digitos da calculadora
     var numTela = JSON.stringify(soma)
