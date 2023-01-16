@@ -7,6 +7,9 @@ var igual = document.querySelector('#igual')
 var operacao = document.querySelector('#operacao')
 var clearAll = document.querySelector('#clearAll')
 var clear = document.querySelector('#clear')
+var memoria = document.querySelector('#memoria')
+var memMais = document.querySelector('#memoriaMais')
+var memMenos = document.querySelector('#memoriaMenos')
 
 console.log('O Erro................... que aparece na calculadora, ocorre quando um numero é muito grande')
 
@@ -40,7 +43,7 @@ function verificaNum(e){
     }else if(
         e == '.' && telaAtual.innerText.includes('.')|| 
         e == '.' && telaAtual.innerText == '' ||
-        quantosNum.length > 11){ 
+        quantosNum.length > 14){ 
         return
     }else {
         telaAtual.innerText += e
@@ -76,11 +79,12 @@ igual.addEventListener('click', function(){
     }
     //Limite de digitos da calculadora
     var numTela = JSON.stringify(soma)
-    if(numTela.length > 10) {
+    if(numTela.length > 13) {
         telaAnterior.innerText = 'Erro...................'
         telaAtual.innerText = ''
         operacao.innerText = ''
         console.log(soma)
+        console.log(numTela.length)
     } else {
         telaAnterior.innerText = ''
         operacao.innerText = ''
@@ -96,5 +100,19 @@ clear.addEventListener('click', function(){
 clearAll.addEventListener('click', function(){
     telaAnterior.innerText = ''
     telaAtual.innerText = ''
+    operacao.innerText = ''
+})
+
+//memoria
+var memCal = 0
+memMais.addEventListener('click', function(){
+    memCal += Number(telaAtual.innerText)
+})
+memMenos.addEventListener('click', function(){
+    memCal -= Number(telaAtual.innerText)
+})
+memoria.addEventListener('click', function(){
+    telaAtual.innerText = memCal
+    telaAnterior.innerText = ''
     operacao.innerText = ''
 })
