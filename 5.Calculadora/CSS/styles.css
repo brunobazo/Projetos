@@ -10,8 +10,8 @@ body {
 }
 #Calculadora{
     background-color: #333333;
-    min-width: 400px;
-    min-height: 600px;
+    min-width: 460px;
+    min-height: 585px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,7 +22,7 @@ body {
     background-color: #202F31;
     border: 2px solid black;
     height: 110px;
-    width: 310px;
+    width: 385px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 20%);
@@ -37,7 +37,7 @@ body {
 }
 #botoes{
     position: absolute;
-    width: 360px;
+    width: 440px;
     height: 420px;
     left: 50%;
     transform: translate(-50%, 38%);
@@ -46,18 +46,23 @@ body {
 button{
     background-color: #474747;
     border: 2px solid black;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     margin: 2px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     color: #EFBB40;
 }
 .grande{
-    height: 80px;
-    width: 168px;
+    height: 70px;
+    width: 204px;
 }
 #operacao{
     font-size: 35px;
+}
+.numero{
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
 }
